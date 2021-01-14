@@ -3,6 +3,13 @@
 // block for google compute network
 resource "google_compute_network" "vpc_network" {
   name = "${var.network_name}"
+
+  // adding a provisioner to execute locally
+  // we use self object to get the parent properties inside provisioners
+
+  provisioner "local-exec" {
+    command = "echo network name is ${self.name}"
+  }
 }
 
 // block for google compute instance
