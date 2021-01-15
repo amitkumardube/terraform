@@ -16,3 +16,7 @@ variable "instance_type" {
 variable "instance_tags" {
     type = list
 }
+
+variable "static_ip" {
+    type = string
+}

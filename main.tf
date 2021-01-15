@@ -22,5 +22,6 @@ module "network_compute_instance" {
   instance_name = "terraform-instance"
   instance_type = "f1-micro"
   instance_tags = ["web", "dev"]
+  static_ip = "terraform-static-ip"
 }
 
