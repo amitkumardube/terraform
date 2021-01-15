@@ -27,6 +27,7 @@ resource "google_compute_network" "vpc_network" {
 
 // block for google compute instance
 resource "google_compute_instance" "vm_instance" {
+  depends_on = [google_storage_bucket.example_bucket]
   name         = "${var.instance_name}"
   machine_type = "${var.instance_type}"
   tags = "${var.instance_tags}"

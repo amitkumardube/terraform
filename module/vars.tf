@@ -20,3 +20,11 @@ variable "instance_tags" {
 variable "static_ip" {
     type = string
 }
+
+variable "bucket_name" {
+    type = string
+}
+
+variable "bucket_location" {
+    type = string
+}

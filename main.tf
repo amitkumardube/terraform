@@ -23,5 +23,10 @@ module "network_compute_instance" {
   instance_type = "f1-micro"
   instance_tags = ["web", "dev"]
   static_ip = "terraform-static-ip"
+
+  // setting variables for bucket
+
+  bucket_name = "getting-started-with-gcp"
+  bucket_location = "US"
 }
 
