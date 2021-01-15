@@ -23,12 +23,9 @@ Now grab a coffee and let terraform do all the magic. You will see your resource
 
 And this is all. Have terraforming.
 
-<b>Documentation
-Terraform Detailed documentation
-https://www.terraform.io/docs/index.html
-Getting Started with GCP
-https://learn.hashicorp.com/collections/terraform/gcp-get-started
-Google configuration reference with GCP ( detailed documentation )
-https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference
+<b>Documentation</b>
+- Terraform Detailed documentation : https://www.terraform.io/docs/index.html
+- Getting Started with GCP : https://learn.hashicorp.com/collections/terraform/gcp-get-started
+- Google configuration reference with GCP ( detailed documentation ) : https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference
 
 <
