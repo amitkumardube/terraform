@@ -12,8 +12,8 @@ provider "google" {
   credentials = file("./../my-first-project-298218-a7316b8c9560.json")
 
   project = "my-first-project-298218"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  region  = var.region
+  zone    = var.zone
 }
 
 module "network_compute_instance" {
