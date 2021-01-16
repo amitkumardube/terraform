@@ -9,7 +9,7 @@ terraform {
 
 provider "google" {
 
-  credentials = file("./../my-first-project-298218-a7316b8c9560.json")
+  credentials = file("./my-first-project-298218-a7316b8c9560.json")
 
   project = "my-first-project-298218"
   region  = var.region
