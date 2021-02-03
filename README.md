@@ -8,8 +8,11 @@
  
 There are 4 terraform concepts explained in this getting started guide.
 
-- Provider - One of the cloud providers. This guide is designed for GCP. For other cloud providers please check terrafrom documentation at <a>https://learn.hashicorp.com/terraform.
-- Resource - The list of resources you like to create. In this guide we created a VPC network and a compute instance.
+- Provider - One of the cloud providers ( GCP , AWS , Docker , Azure etc)
+    - This guide is designed for GCP. For other cloud providers please check terrafrom documentation at <a>https://learn.hashicorp.com/terraform.
+    - Almost all the terraform providers are written in golang.
+    - Providers are binaries. They work with terraform CLI to make respective API calls to provision the infra.
+- Resource - The list of resources you like to create. In this guide we created a VPC network ,  a compute instance , a random number and a google storage bucket.
 - Module - module provides reusability to your code. you define it once like templates and then just pass values to get desired result.
 - Output - output returns the values after creation of resources
 
