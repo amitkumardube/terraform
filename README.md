@@ -3,8 +3,8 @@
 <b>Getting started with terraform</b>
 
 <b>What is Terraform</b>
-Terraform is a IAC(infra as code) tool for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments.
-Documentation - https://www.terraform.io/intro/index.html
+<p>Terraform is a IAC(infra as code) tool for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments.</p>
+<p>Documentation - https://www.terraform.io/intro/index.html </p>
  
 There are 4 terraform concepts explained in this getting started guide.
 
