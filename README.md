@@ -17,6 +17,8 @@ There are 3 terraform concepts explained in this getting started guide.
 - If there is any error while cloning the repo due to SSL certificate , please run `git config --global http.sslVerify false` and then run the above clone command again.
 - git checkout release/1.0.0
 - modify main.tf file to update the `GCP Project ID` and the `path of json file for the service account` which has required access to create resources as per config
+- To create a service account if you don't already have one - please login to GCP account. Go to `IAM & ADMIN -> Service Accounts`. Check a new service account. For simplicity grant this service account `Editor` role and then `create a key` for this service account.
+- Once you are done with above steps, you are all done to start with Terraform. Please follow below steps in sequence.
 - terraform -chdir=DIR init (ignore -chdir flag if you are in the directory where your terraform config files are else enter the PATH of the directory which contains your terraform config files)
 - terraform -chdir=DIR plan -out terraform.tfplan
 - terraform -chdir=DIR apply terraform.tfplan
