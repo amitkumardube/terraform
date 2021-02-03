@@ -9,11 +9,18 @@ terraform {
 
 provider "google" {
 
-  credentials = file("./my-first-project-298218-a7316b8c9560.json")
+  credentials = file("./../my-first-project-298218-a7316b8c9560.json")
+  #credentials = file("null_resource.temporary.path")
 
   project = "my-first-project-298218"
   region  = var.region
   zone    = var.zone
+}
+
+resource "null_resource" "temporary" {
+  triggers = {
+    path = "${path.module}/../my-first-project-298218-a7316b8c9560.json"
+  }
 }
 
 module "network_compute_instance" {
