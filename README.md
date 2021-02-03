@@ -1,8 +1,12 @@
 # terraform
 
-Getting started with terraform
+<b>Getting started with terraform</b>
 
-There are 3 terraform concepts explained in this getting started guide.
+<b>What is Terraform</b>
+Terraform is a IAC(infra as code) tool for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments.
+Documentation - https://www.terraform.io/intro/index.html
+ 
+There are 4 terraform concepts explained in this getting started guide.
 
 - Provider - One of the cloud providers. This guide is designed for GCP. For other cloud providers please check terrafrom documentation at <a>https://learn.hashicorp.com/terraform.
 - Resource - The list of resources you like to create. In this guide we created a VPC network and a compute instance.
