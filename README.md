@@ -4,12 +4,12 @@
 
 <b>What is Terraform</b>
 <p>Terraform is a IAC(infra as code) tool written in golang for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments.</p>
-<p>Documentation - `https://www.terraform.io/intro/index.html` </p>
+<p>Documentation - https://www.terraform.io/intro/index.html </p>
 
 <b>What is Terraform CLI</b> 
 - It's command like tool written in golang to run terraform commands.
 - Basic commands are init , plan , apply and destroy. 
-- you can get it from `https://www.terraform.io/downloads.html` as per your operating system.
+- you can get it from [["https://www.terraform.io/downloads.html"]] as per your operating system.
  
 There are 4 terraform concepts explained in this getting started guide.
 
