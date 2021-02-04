@@ -37,8 +37,17 @@ There are 4 terraform concepts explained in this getting started guide.
 - To create a service account if you don't already have one - please login to GCP account. Go to `IAM & ADMIN -> Service Accounts`. Check a new service account. For simplicity grant this service account `Editor` role and then `create a key` for this service account.
 - Once you are done with above steps, you are all done to start with Terraform. Please follow below steps in sequence.
 - terraform -chdir=DIR init (ignore -chdir flag if you are in the directory where your terraform config files are else enter the PATH of the directory which contains your terraform config files)
+    - It downloads any modules being used in configuration.
+    - It downloads any provider plugin used and put it in .terraform directly.
+    - It initializes any backend to store your state data.
+- terraform -chdir=DIR validate
+    - It validates the configuration files as per the provider downloaded during the init step.
+    - This step is optional and has to be run after terraform init. 
 - terraform -chdir=DIR plan -out terraform.tfplan
+    - It's not mandatory to run this step. However it's a best practice to do this.
+    - This step captures your planning into a file so that any change done later doesn't impact your plan.
 - terraform -chdir=DIR apply terraform.tfplan
+    - This step actually triggers the creation of infra as per the config files.
 
 Now grab a coffee and let terraform do all the magic. You will see your resources getting created in gcp console.
 
