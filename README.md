@@ -12,7 +12,7 @@
 - you can get it from https://www.terraform.io/downloads.html as per your operating system.
 
 <b>Building blocks of Terraform configuration files</b> 
-Terraform config files are written in HCL(Hashicorp configuration language). There are 5 frequently used terraform concepts explained in this getting started guide.
+<p>Terraform config files are written in HCL(Hashicorp configuration language). There are 5 frequently used terraform concepts explained in this getting started guide.</p>
 
 - Provider - One of the cloud providers ( GCP , AWS , Docker , Azure etc)
     - This guide is designed for GCP. For other cloud providers please check terrafrom documentation at <a>https://learn.hashicorp.com/terraform.
