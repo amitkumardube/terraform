@@ -3,8 +3,13 @@
 <b>Getting started with terraform</b>
 
 <b>What is Terraform</b>
-<p>Terraform is a IAC(infra as code) tool for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments.</p>
-<p>Documentation - https://www.terraform.io/intro/index.html </p>
+<p>Terraform is a IAC(infra as code) tool written in golang for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments.</p>
+<p>Documentation - `https://www.terraform.io/intro/index.html` </p>
+
+<b>What is Terraform CLI</b> 
+- It's command like tool written in golang to run terraform commands.
+- Basic commands are init , plan , apply and destroy. 
+- you can get it from `https://www.terraform.io/downloads.html` as per your operating system.
  
 There are 4 terraform concepts explained in this getting started guide.
 
@@ -12,9 +17,14 @@ There are 4 terraform concepts explained in this getting started guide.
     - This guide is designed for GCP. For other cloud providers please check terrafrom documentation at <a>https://learn.hashicorp.com/terraform.
     - Almost all the terraform providers are written in golang.
     - Providers are binaries. They work with terraform CLI to make respective API calls to provision the infra.
+- Provisioner - They are executed after a resource a created or before a resource is destroyed.
 - Resource - The list of resources you like to create. In this guide we created a VPC network ,  a compute instance , a random number and a google storage bucket.
 - Module - module provides reusability to your code. you define it once like templates and then just pass values to get desired result.
+    - Modules are of 2 types : local and global. We used a local module in this guide.
+    - Local modules are the modules which reside on the same machine as your other terraform config files.
+    - Global modules resize in a certral registry like terrafrom registry - https://registry.terraform.io/
 - Output - output returns the values after creation of resources
+- Terraform CLI - Basic commands are init , plan , apply and destroy. 
 
 <b> how to use this guide? </b>
 
