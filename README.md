@@ -3,7 +3,9 @@
 <b>Getting started with terraform</b>
 
 <b>What is Terraform</b>
-<p>Terraform is a IAC(infra as code) tool written in golang for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments. With Terraform an organization is not locked with one cloud provider and can opt for hybrid cloud infra.</p>
+<p>Terraform is an open source IAC(infra as code) tool written in golang for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments. With Terraform an organization is not locked with one cloud provider and can opt for hybrid cloud infra.</p>
+<p>Terraform is created by HashiCorp</p>
+<p>Terraform is declarative & it uses HCL(HashiCorp Configuration Language) to declare the desired state of your infra.</p>
 <p>Documentation - https://www.terraform.io/intro/index.html </p>
 
 <b>What is Terraform CLI</b> 
@@ -28,6 +30,10 @@
     - Modules are of 2 types : local and global. We used a local module in this guide.
     - Local modules are the modules which reside on the same machine as your other terraform config files.
     - Global modules reside in a certral registry like terrafrom registry - https://registry.terraform.io/
+
+<b>Prerequisite</b>
+- Free GCP Account.
+- Basic GCP understanding.
 
 <b> how to use this guide? </b>
 
@@ -54,7 +60,12 @@
 
 Now grab a coffee and let terraform do all the magic. You will see your resources getting created in gcp console.
 
-And this is all. Have terraforming.
+And this is all. Happy terraforming !!.
+
+<b>Best Practices</b>
+- Always give structure to your configuration files. Don't put everything in one file.
+- Always write your code with reusability in mind. Try to write modules for each resource type.
+- Write a variable file (.tfvar) for all the variables in the configuration.
 
 <b>Documentation</b>
 - Terraform Detailed documentation : https://www.terraform.io/docs/index.html
