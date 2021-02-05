@@ -67,6 +67,10 @@ And this is all. Happy terraforming !!.
 - Always write your code with reusability in mind. Try to write modules for each resource type.
 - Write a variable file (.tfvars) for all the variables in the configuration.
 
+<b> Terraform Associate Certification </b>
+- https://www.hashicorp.com/certification/terraform-associate
+- https://www.pluralsight.com/paths/hashicorp-certified-terraform-associate
+
 <b>Documentation</b>
 - Terraform Detailed documentation : https://www.terraform.io/docs/index.html
 - Getting Started with GCP : https://learn.hashicorp.com/collections/terraform/gcp-get-started
