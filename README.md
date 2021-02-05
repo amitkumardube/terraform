@@ -14,7 +14,7 @@
 - you can get it from https://www.terraform.io/downloads.html as per your operating system.
 
 <b>How to run Terraform commands through CLI</b><br>
-![alt Terraform CLI](./terraform.png)
+                    ![alt Terraform CLI](./terraform.png)
 
 <b>Building blocks of Terraform configuration files</b> 
 <p>Terraform config files are written in HCL(Hashicorp configuration language). There are 5 frequently used terraform concepts explained in this getting started guide.</p>
@@ -65,10 +65,22 @@ Now grab a coffee and let terraform do all the magic. You will see your resource
 
 And this is all. Happy terraforming !!.
 
+<b>Terraform Cloud</b>
+- While running terraform locally gives you fill control, it has its own challenges when working in a team.
+- Anyone having the key can deploy infra without any approval.
+- The management of terraform state file becomes an issue.
+- The management of variables especially sensitive ones becomes an issue.
+- Private registry to store remote modules so that they can used by others.
+- Terraform cloud takes care of all this as SAAS.
+
+<b>Terraform Enterprise</b>
+- This is enterprise version of terraform cloud.
+- Its used by big enterprises.
+
 <b>Best Practices</b>
 - Always give structure to your configuration files. Don't put everything in one file.
 - Always write your code with reusability in mind. Try to write modules for each resource type.
-- Write a variable file (.tfvars) for all the variables in the configuration.
+- When writing modules always make them generic so that they can shared and used with other teams.
 
 <b> Terraform Associate Certification </b>
 - https://www.hashicorp.com/certification/terraform-associate
