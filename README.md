@@ -3,7 +3,7 @@
 <b>Getting started with terraform</b>
 
 <b>What is Terraform</b>
-<p>Terraform is a IAC(infra as code) tool written in golang for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments. With Terraform one can support hybrid infra.</p>
+<p>Terraform is a IAC(infra as code) tool written in golang for building, changing, and versioning infrastructure safely and efficiently. With Terraform we can provision infra through code/software to achieve consistent and predictable environments. With Terraform an organization is not locked with one cloud provider and can opt for hybrid cloud infra.</p>
 <p>Documentation - https://www.terraform.io/intro/index.html </p>
 
 <b>What is Terraform CLI</b> 
@@ -27,7 +27,7 @@
 - Module - module provides reusability to your code. you define it once like templates and then just pass values to get desired result.
     - Modules are of 2 types : local and global. We used a local module in this guide.
     - Local modules are the modules which reside on the same machine as your other terraform config files.
-    - Global modules resize in a certral registry like terrafrom registry - https://registry.terraform.io/
+    - Global modules reside in a certral registry like terrafrom registry - https://registry.terraform.io/
 
 <b> how to use this guide? </b>
 
