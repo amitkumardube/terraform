@@ -14,7 +14,7 @@
 - you can get it from https://www.terraform.io/downloads.html as per your operating system.
 
 <b>How to run Terraform commands through CLI</b><br>
-![alt Terraform CLI](./terraform.PNG?raw=true)
+![alt Terraform CLI](./terraform.PNG)
 
 <b>Building blocks of Terraform configuration files</b> 
 <p>Terraform config files are written in HCL(Hashicorp configuration language). There are 5 frequently used terraform concepts explained in this getting started guide.</p>
