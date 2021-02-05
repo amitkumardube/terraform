@@ -14,6 +14,7 @@
 - you can get it from https://www.terraform.io/downloads.html as per your operating system.
 
 <b>How to run Terraform commands through CLI</b><br>
+
                     ![alt Terraform CLI](./terraform.png)
 
 <b>Building blocks of Terraform configuration files</b> 
