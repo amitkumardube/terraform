@@ -65,7 +65,7 @@ And this is all. Happy terraforming !!.
 <b>Best Practices</b>
 - Always give structure to your configuration files. Don't put everything in one file.
 - Always write your code with reusability in mind. Try to write modules for each resource type.
-- Write a variable file (.tfvar) for all the variables in the configuration.
+- Write a variable file (.tfvars) for all the variables in the configuration.
 
 <b>Documentation</b>
 - Terraform Detailed documentation : https://www.terraform.io/docs/index.html
