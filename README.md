@@ -13,6 +13,9 @@
 - Basic commands are init , plan , apply and destroy. 
 - you can get it from https://www.terraform.io/downloads.html as per your operating system.
 
+<b>How to run Terraform commands through CLI</b>
+![alt Terraform CLI execution](https://github.com/amitkumardube/terraform/blob/release/1.0.0/Untitled%20Diagram.drawio)
+
 <b>Building blocks of Terraform configuration files</b> 
 <p>Terraform config files are written in HCL(Hashicorp configuration language). There are 5 frequently used terraform concepts explained in this getting started guide.</p>
 
