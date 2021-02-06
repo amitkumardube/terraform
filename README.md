@@ -35,6 +35,10 @@
     - Local modules are the modules which reside on the same machine as your other terraform config files.
     - Global modules reside in a certral registry like terrafrom registry - https://registry.terraform.io/
 
+<b>Variables in Terraform</b>
+- Terraform has string , number , bool , list , map types of variable.
+- Documentation - https://www.terraform.io/docs/language/values/variables.html.
+
 <b>Prerequisite</b>
 - Free GCP Account.
 - Basic GCP understanding.
