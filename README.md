@@ -73,6 +73,7 @@ And this is all. Happy terraforming !!.
 - The management of variables especially sensitive ones becomes an issue.
 - Private registry to store remote modules so that they can used by others.
 - Terraform cloud takes care of all this as SAAS.
+- Documentation : https://learn.hashicorp.com/tutorials/terraform/cloud-sign-up?in=terraform/cloud-get-started
 
 <b>Terraform Enterprise</b>
 - This is enterprise version of terraform cloud.
