@@ -57,7 +57,7 @@ There are 5 basics building blocks of terraform configuration files</p>
 <b> how to use this guide? </b>
 
 - Download terraform binary from terraform website <a>https://www.terraform.io/downloads.html.
-- Add binary to classpath.
+- Add binary to path.
 - git clone https://github.com/amitkumardube/terraform.git
 - If there is any error while cloning the repo due to SSL certificate , please run `git config --global http.sslVerify false` and then run the above clone command again.
 - git checkout release/1.0.0
