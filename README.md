@@ -43,11 +43,11 @@ There are 5 basics building blocks of terraform configuration files</p>
              `variable "region" {
                 default = "us-east-1"
              }`
-        -  To override default value, define in terraform.tfvars.
-             terraform.tfvars( override)  `region = "us-east-2"` 
+        -  Override default value, define in terraform.tfvars.
+             `region = "us-east-2"` 
       -  To access these variables in resource block simply use var.region
       -  Command Line flags(`terraform apply -var 'regions=us-east1'`)
-      -  Varible defination file(`terraform apply -var-file 'terraform.tfvars'`)
+      -  Variable definition file(`terraform apply -var-file 'terraform.tfvars'`)
 - Documentation - https://www.terraform.io/docs/language/values/variables.html.
 
 <b>Prerequisite</b>
