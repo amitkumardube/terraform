@@ -39,16 +39,16 @@ There are 5 basics building blocks of terraform configuration files</p>
 - Terraform has string , number , bool , list , map types of variable.
 - Terraform allows to centrally define the values that can be used in multiple terraform configuration blocks
 -  Assigning values to variable in multiple ways
-          -  Variable defaults - You define variables and its default value in variable.tf configuration file and to override default value define in
-             terraform.tfvars. For e.g in variable.tf
+    -  Variable defaults - You define variables and its default value in variable.tf configuration file and to override default value define in terraform.tfvars. 
+            For e.g in variable.tf
              variable "region" {
                 default = "us-east-1"
              }
              terraform.tfvars( override)
               region = "us-east-2"  
-          -  To access these variables in resource block simply use var.region
-          -  Command Line flags(terraform apply -var 'regions=us-east1')
-          -  Varible defination file(terraform apply -var-file 'terraform.tfvars')
+      -  To access these variables in resource block simply use var.region
+      -  Command Line flags(terraform apply -var 'regions=us-east1')
+      -  Varible defination file(terraform apply -var-file 'terraform.tfvars')
 - Documentation - https://www.terraform.io/docs/language/values/variables.html.
 
 <b>Prerequisite</b>
