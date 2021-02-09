@@ -25,7 +25,7 @@ There are 5 basics building blocks of terraform configuration files</p>
     - Terraform support lot of providers , so you have providers for GCP , AWS , Docker , Azure etc. This guide is designed for GCP. For other cloud providers please check terrafrom documentation at <a>https://learn.hashicorp.com/terraform.
     - Providers are binaries. They work with terraform CLI to intract with remote systems to provision the infra.
     - Almost all the terraform providers are written in golang.
-- Resource - The list of resources you like to create. These are basically reference to the individual service which provider has to offer
+- Resource - These are basically reference to the individual service which provider has to offer and help in creating resources
   In this guide we created a VPC network ,  a compute instance , a random number and a google storage bucket.
 - Provisioner - They are inked to a resource and declared under resource section. They are executed after a resource a created or before a resource is destroyed.
     - Provisioners are used to execute scripts on local or on remote machine.
