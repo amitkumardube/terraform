@@ -36,8 +36,8 @@ There are 5 basics building blocks of terraform configuration files</p>
     - Global modules reside in a certral registry like terrafrom registry - https://registry.terraform.io/
 
 <b>Variables in Terraform</b>
-- Terraform has string , number , bool , list , map types of variable.
 - Terraform allows to centrally define the values that can be used in multiple terraform configuration blocks
+- Terraform has string , number , bool , list , map types of variable.
 -  Assigning values to variable in multiple ways
     -  Variable defaults - define variables with its default value in variable.tf configuration file. For e.g in variable.tf
              `variable "region" {
