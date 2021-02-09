@@ -27,7 +27,7 @@ There are 5 basics building blocks of terraform configuration files</p>
     - Almost all the terraform providers are written in golang.
 - Resource - The list of resources you like to create. These are basically reference to the individual service which provider has to offer
   In this guide we created a VPC network ,  a compute instance , a random number and a google storage bucket.
-- Provisioner - They are inked to a resource and declared under resource section and executed after a resource a created or before a resource is destroyed.
+- Provisioner - They are inked to a resource and declared under resource section. They are executed after a resource a created or before a resource is destroyed.
     - Provisioners are used to execute scripts on local or on remote machine.
 - Output - output returns the values after creation of resources. It acts as input to other resource as well
 - Module -Centralized Structure and provides reusability to your code. Based on DRY (DONT REPEAT YOURSELF) pronciple of software design 
