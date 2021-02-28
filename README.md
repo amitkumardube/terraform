@@ -74,6 +74,9 @@ There are 5 basics building blocks of terraform configuration files</p>
 - terraform -chdir=DIR plan -out terraform.tfplan
     - It's not mandatory to run this step. However it's a best practice to do this.
     - This step captures your planning into a file so that any change done later doesn't impact your plan.
+    - Terraform refreshes and inspect the state file at this stage to find out what it needs to do to reach to the desired state.
+    - It creates a dependency graph to find out the sequence in which the changes need to be applied.
+    - And then it calculates additions , updates and deletions required to achieve the desired state.
 - terraform -chdir=DIR apply terraform.tfplan
     - This step actually triggers the creation of infra as per the config files.
 
