@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     google = {
-      source = "hashicorp/google"
+      source  = "hashicorp/google"
       version = "3.5.0"
     }
   }
@@ -9,32 +9,31 @@ terraform {
 
 provider "google" {
 
-  credentials = file("my-first-project-298218-a7316b8c9560.json")
+  credentials = file("./../my-first-project-298218-a7316b8c9560.json")
+  #credentials = file("null_resource.temporary.path")
 
   project = "my-first-project-298218"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  region  = var.region
+  zone    = var.zone
 }
 
-resource "google_compute_network" "vpc_network" {
-  name = "terraform-network"
+resource "null_resource" "temporary" {
+  triggers = {
+    path = "${path.module}/../my-first-project-298218-a7316b8c9560.json"
+  }
 }
 
-resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
-  machine_type = "f1-micro"
-  tags = ["web" , "dev"]
+module "network_compute_instance" {
+  source        = "./module"
+  network_name  = "terraform-network"
+  instance_name = "terraform-instance"
+  instance_type = "f1-micro"
+  instance_tags = ["web", "dev"]
+  static_ip = "terraform-static-ip"
 
-  boot_disk {
-    initialize_params {
-      image = "debian-cloud/debian-9"
-    }
-  }
+  // setting variables for bucket
 
-  network_interface {
-    network = google_compute_network.vpc_network.name
-    access_config {
-    }
-  }
+  bucket_name = "getting-started-with-gcp"
+  bucket_location = "US"
 }
 
