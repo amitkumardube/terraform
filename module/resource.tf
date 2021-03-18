@@ -2,35 +2,35 @@
 
 // block for google compute network
 resource "google_compute_network" "vpc_network" {
-  name = "${var.network_name}"
+  name = var.network_name
 
   // adding a provisioner to execute locally
   // we use self object to get the parent properties inside provisioners
 
   provisioner "local-exec" {
-    command = "echo network name is ${self.name}"
+    command    = "echo network name is ${self.name}"
     on_failure = continue
   }
 
   provisioner "local-exec" {
-    command = "echo first"
-    on_failure = fail   // this is default behaviour
+    command    = "echo first"
+    on_failure = fail // this is default behaviour
   }
 
   // this will only run when this resource will be destroyed
 
   provisioner "local-exec" {
-    when = destroy
+    when    = destroy
     command = "echo second"
   }
 }
 
 // block for google compute instance
 resource "google_compute_instance" "vm_instance" {
-  depends_on = [google_storage_bucket.example_bucket]
-  name         = "${var.instance_name}"
-  machine_type = "${var.instance_type}"
-  tags = "${var.instance_tags}"
+  depends_on                = [google_storage_bucket.example_bucket]
+  name                      = var.instance_name
+  machine_type              = var.instance_type
+  tags                      = var.instance_tags
   allow_stopping_for_update = true
 
   boot_disk {
@@ -45,7 +45,7 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
 
-  provisioner "local-exec"{
+  provisioner "local-exec" {
     command = "echo ${google_compute_instance.vm_instance.name} : ${google_compute_instance.vm_instance.network_interface[0].access_config[0].nat_ip} >> ip_address.txt"
   }
 }

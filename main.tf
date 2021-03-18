@@ -8,9 +8,10 @@ terraform {
 }
 
 provider "google" {
-  project = "my-first-project-298218"
-  region  = var.region
-  zone    = var.zone
+  credentials = file("./../my-first-project-298218-a7316b8c9560.json")
+  project     = "my-first-project-298218"
+  region      = var.region
+  zone        = var.zone
 }
 
 resource "null_resource" "temporary" {
@@ -25,11 +26,11 @@ module "network_compute_instance" {
   instance_name = "terraform-instance"
   instance_type = "f1-micro"
   instance_tags = ["web", "dev"]
-  static_ip = "terraform-static-ip"
+  static_ip     = "terraform-static-ip"
 
   // setting variables for bucket
 
-  bucket_name = "getting-started-with-gcp"
+  bucket_name     = "getting-started-with-gcp"
   bucket_location = "US"
 }
 
