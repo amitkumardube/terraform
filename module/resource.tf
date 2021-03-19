@@ -2,8 +2,8 @@
 
 // block for google compute network
 resource "google_compute_network" "vpc_network" {
-  name = "${var.network_name}"
-
+  name = var.network_name
+  
   // adding a provisioner to execute locally
   // we use self object to get the parent properties inside provisioners
 
@@ -28,9 +28,9 @@ resource "google_compute_network" "vpc_network" {
 // block for google compute instance
 resource "google_compute_instance" "vm_instance" {
   depends_on = [google_storage_bucket.example_bucket]
-  name         = "${var.instance_name}"
-  machine_type = "${var.instance_type}"
-  tags = "${var.instance_tags}"
+  name         = var.instance_name
+  machine_type = var.instance_type
+  tags = var.instance_tags
   allow_stopping_for_update = true
 
   boot_disk {
